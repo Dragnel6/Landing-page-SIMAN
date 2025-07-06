@@ -200,6 +200,7 @@ main .card-container .products .product h3 {
     display: flex;
     font-size: 1.8rem;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #A83338;
 }
 main .card-container .products .product button {
     width: 100%;
@@ -249,7 +250,73 @@ main .card-container .products .product button {
     grid-column-start: 5;
     grid-row-start: 2;
 }
-        
+
+/*estilos del pie de pagina*/
+.piee {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem 3%;
+    background-color: #A83338;
+}
+.pie2{
+    display: contents;
+}
+.pie-text:nth-child(1){
+    display: flex;
+    align-items: center;
+}
+.pie-text{
+    flex: 1;
+}
+.piee .pie2 .pie-text .logo-resposive{
+    display: none;
+
+}
+.pie-text img{
+    width: 15vw;
+}
+.pie-text span{
+    justify-content: center;
+    align-items: center;
+    font-size: 2.2rem;
+    color: white;
+    font-weight: bold;
+}
+.pie-text .icons {
+ display: flex;
+}
+.pie-text .icons .icono a{
+    font-size: 3rem;
+}
+.pie-text .info {
+    margin-top: 5px;
+}
+.piee .pie2 .pie-text .corporativo{
+    display: flex;
+    flex-direction: column;
+    
+}
+.pie-text .info a{
+    color: white;
+    font-size: 1.7rem;
+    margin-bottom: 10px;
+}
+.pie-text .info a:hover{
+    color: #999;
+}
+
+.pie3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background: #666F88;
+}
+.pie3 p{
+    font-size: 1.5rem;
+    color: black;
+}
+
 @media (max-width: 768px) {
 
     .nav-container nav .logo img{
@@ -262,6 +329,7 @@ main .card-container .products .product button {
       height: auto;
 
     }
+    
     .nav-container nav .search{
        margin-right: 10px;
         
@@ -294,4 +362,156 @@ main .card-container .products .product button {
 
 
     }
+    /* estilos de las cards */
+    main .card-container .products {
+        grid-template-columns: repeat(4, 6fr);
+    }
+    main .card-container .products .product {
+        width: 20vw;
+        height: 32vh;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        padding: 10px;
+        margin-bottom: 10px;
+        
+        
+    }
+    main .card-container .products .product p {
+        display: flex;
+        font-size: 1rem;
+        font-weight: 300;  
+        
+    }
+    main .card-container .products .product p,
+    main .card-container .products .product h3 {
+        margin: 0 0 5px 0;
+    }
+    main .card-container .products .product h3 {
+        display: flex;
+        font-size: 1.2rem;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      color: #A83338;
+    }
+    main .card-container .products .product button {
+        width: 100%;
+        height: 3vh;
+        background-color: #A83338;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1rem;
+        font-weight: bold;
+    }
+    .pie-text img{
+        display: none;
+    }
+    .pie-text {
+      border-right: 1px solid #fff;
+      margin-right: 5px;
+    }
+    .pie-text span{
+        font-size: 1.7rem;
+       
+    }
+    .piee .pie2 .pie-text .logo-resposive{
+        display: block;
+        width: 10vw;
+        height: auto;;
+
+    }
+}
+@media (max-width: 576px){
+    .nav-container nav .search {
+        width: 100%;
+        margin-right: 0;
+    }
+    .nav-container nav .search .search-input {
+        width: 100%;
+    }
+    main .card-container .products {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    main .card-container .products .product {
+        width: 100%;
+        height: auto;
+    }
+    main .card-container h2{
+        font-size: 3rem;
+    }
+    .parent {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 8px;
+    }
+    .div1 {
+        grid-column: span 6 / span 6;
+    }
+
+    .div3 {
+        grid-column: span 3 / span 3;
+        grid-row-start: 2;
+   }
+
+    .div4 {
+        grid-column: span 3 / span 3;
+        grid-column-start: 4;
+        grid-row-start: 2;
+    }
+
+    .div5 {
+        grid-column: span 3 / span 3;
+       grid-row-start: 3;
+    }
+
+    .div6 {
+        grid-column: span 3 / span 3;
+        grid-column-start: 4;
+        grid-row-start: 3;
+    }
+    .parent div img{
+        width: 100%;
+        height: auto;
+    }
+    .parent div h3{
+        font-size: 1.5rem;
+    }
+    .piee {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        padding: 2rem 0;
+
+    }
+    .pie-text img{
+        display: block;
+        width: 30vw;
+        height: auto;
+    }
+    .piee .pie2 .pie-text .logo-resposive{
+        display: none;
+    }
+    .pie-text span{
+        font-size: 1.5rem;
+        border-bottom: 1px solid #fff;
+    }
+    .piee .pie2 .pie-text  .icons{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+    }
+    .pie-text {
+      border-right: none;
+    }
+    .pie-text .info a{
+        font-size: 1.5rem;
+    }
+    .pie3 p{
+        font-size: 1.2rem;
+    }
+
+    
 }

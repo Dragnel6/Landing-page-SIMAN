@@ -382,6 +382,13 @@ button:hover{
 }
 
 @media (max-width: 576px){
+     .nav-container nav .search {
+        width: 100%;
+        margin-right: 0;
+    }
+    .nav-container nav .search .search-input {
+        width: 100%;
+    }
     .piee {
         display: flex;
         flex-direction: column;
